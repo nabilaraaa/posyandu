@@ -1,3 +1,4 @@
+import 'package:apkposyandu/main.dart';
 import 'package:apkposyandu/presentation/profile_settings_page/profile_settings_page.dart';
 import 'package:apkposyandu/widgets/custom_bottom_bar.dart';
 import 'package:flutter/material.dart';
@@ -7,14 +8,11 @@ import 'package:apkposyandu/core/app_export.dart';
 class ProfileSettingsContainerScreen extends StatelessWidget {
   ProfileSettingsContainerScreen({Key? key}) : super(key: key);
 
-  GlobalKey<NavigatorState> navigatorKey = GlobalKey();
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
             body: Navigator(
-                key: navigatorKey,
                 initialRoute: AppRoutes.profileSettingsPage,
                 onGenerateRoute: (routeSetting) => PageRouteBuilder(
                     pageBuilder: (ctx, ani, ani1) =>
@@ -34,11 +32,11 @@ class ProfileSettingsContainerScreen extends StatelessWidget {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.profileSettingsPage;
+        return AppRoutes.homeScreen;
       case BottomBarEnum.Dataanak:
-        return "/";
+        return AppRoutes.dataAnakScreen;
       case BottomBarEnum.Akun:
-        return "/";
+        return AppRoutes.akunTwoScreen;
       default:
         return "/";
     }

@@ -76,6 +76,9 @@ class AkunTwoScreen extends StatelessWidget {
               SizedBox(height: 3.v),
               CustomOutlinedButton(
                 text: "Ubah Profil",
+                onPressed: () {
+                  Navigator.pushNamed(context, AppRoutes.profileSettingsPage);
+                },
               ),
               SizedBox(height: 24.v),
               CustomElevatedButton(

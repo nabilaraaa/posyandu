@@ -77,6 +77,10 @@ class ProfileSettingsPage extends StatelessWidget {
                                   height: 48.v,
                                   text: "UBAH".toUpperCase(),
                                   margin: EdgeInsets.symmetric(horizontal: 9.h),
+                                  onPressed: () {
+                                    Navigator.pushNamed(
+                                        context, AppRoutes.akunTwoScreen);
+                                  },
                                   buttonStyle: CustomButtonStyles.fillLightBlue,
                                   buttonTextStyle:
                                       CustomTextStyles.titleSmallYuGothicUI,

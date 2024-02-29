@@ -1,3 +1,4 @@
+import 'package:apkposyandu/presentation/profile_settings_page/profile_settings_page.dart';
 import 'package:flutter/material.dart';
 import '../presentation/splash_screen_three_screen/splash_screen_three_screen.dart';
 import '../presentation/onboarding_screen/onboarding_screen.dart';
@@ -43,6 +44,7 @@ class AppRoutes {
     registerOneScreen: (context) => RegisterOneScreen(),
     dataBalitaOneScreen: (context) => DataBalitaOneScreen(),
     masukOneScreen: (context) => MasukOneScreen(),
+    profileSettingsPage: (context) => ProfileSettingsPage(),
     profileSettingsContainerScreen: (context) =>
         ProfileSettingsContainerScreen(),
     akunTwoScreen: (context) => AkunTwoScreen(),
